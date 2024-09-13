@@ -1,5 +1,4 @@
-[![CI](https://github.com/nogibjj/Diego_Rodriguez_Miniproject1/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Diego_Rodriguez_Miniproject1/actions/workflows/hello.yml)
-
+[![CI/CD run](https://github.com/nogibjj/Diego_Rodriguez_Miniproject2/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Diego_Rodriguez_Miniproject2/actions/workflows/hello.yml)
 # IDS706-Week2
 ## File Structure 
 ```
