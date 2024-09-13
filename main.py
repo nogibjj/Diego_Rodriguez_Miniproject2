@@ -31,7 +31,7 @@ def scatter_plot(df, x, y, title, plot="plot.png"):
 
 def table_format(text):
     """format to md pandas describe function"""
-    table = "| Statistics | Value |\n| _______ | _______ |\n"
+    table = "| Statistics | Value |\n| ----- | ----- |\n"
     for i in text.split(" "):
         for j in i.split("\n"):
             if j == "Name:":

@@ -1,6 +1,6 @@
-###Describe GDP per capita (constant 2010 US$):
+### Describe GDP per capita (constant 2010 US$):
 | Statistics | Value |
-| _______ | _______ |
+| ----- | ----- |
 | count | 198.00 |
 | mean | 15335.72 |
 | std | 22881.31 |
@@ -11,9 +11,9 @@
 | max | 189464.58 |
 
 
-###Describe Mortality rate, infant (per 1,000 live births):
+### Describe Mortality rate, infant (per 1,000 live births):
 | Statistics | Value |
-| _______ | _______ |
+| ----- | ----- |
 | count | 193.00 |
 | mean | 23.40 |
 | std | 21.06 |
