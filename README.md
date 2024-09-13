@@ -31,16 +31,16 @@ Here is a scatter plot:
 ![scatter_plot](images/plot.png)
 
 ## Some summary statistics:
-### Describe GDP per capita (constant 2010 US$):
-| Statistics | Value |
-| _______ | _______ |
-| count | 198.00 |
-| mean | 15335.72 |
-| std | 22881.31 |
-| min | 228.43 |
-| 25% | 1844.39 |
-| 50% | 6134.94 |
-| 75% | 17655.00 |
-| max | 189464.58 |
+Describe GDP per capita (constant 2010 US$):
+|statistics | value |
+| -------- | ------------ |   
+|count       | 198.000000 |
+|mean      | 15335.724729 |
+|std       | 22881.307340 |
+|min         | 228.432544 |
+|25%        | 1844.387439 |
+|50%        | 6134.939066 |
+|75%       | 17654.996438 |
+|max      | 189464.583635 |
 
 
