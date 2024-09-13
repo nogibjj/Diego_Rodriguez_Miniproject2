@@ -5,7 +5,12 @@ import pandas as pd
 import numpy as np
 import os
 
-from main import summary_statistics, log_func, generate_general_markdown, scatter_plot
+from main import (
+    summary_statistics,
+    log_func,
+    generate_general_markdown,
+    scatter_plot,
+)
 
 file = "https://media.githubusercontent.com/media/nickeubank/MIDS_Data/master/World_Development_Indicators/wdi_small_tidy_2015.csv"
 x_log = "Log GDP per capita (constant 2010 US$)"

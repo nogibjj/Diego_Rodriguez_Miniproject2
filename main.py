@@ -29,29 +29,36 @@ def scatter_plot(df, x, y, title, plot="plot.png"):
     return my_chart.save("images/" + plot)
 
 
+def table_format(text):
+    """format to md pandas describe function"""
+    table = "| Statistics | Value |\n| _______ | _______ |\n"
+    for i in text.split(" "):
+        for j in i.split("\n"):
+            if j == "Name:":
+                return table
+            elif j == "":
+                pass
+            elif j[0].isdigit() and j[-1].isdigit():
+                digit = float(j)
+                table += f"{digit:.2f} |\n"
+
+            else:
+                table += f"| {j} | "
+
+
 def generate_general_markdown(df, x, y):
     """generate an md file with outputs"""
     markdown_table1 = summary_statistics(df, x)
     markdown_table2 = summary_statistics(df, y)
-    markdown_table1 = str(markdown_table1)
-    markdown_table2 = str(markdown_table2)
+    markdown_table1 = table_format(str(markdown_table1))
+    markdown_table2 = table_format(str(markdown_table2))
 
     # Write the markdown table to a file
     with open("Data_summary.md", "w", encoding="utf-8") as file:
-        file.write(f"Describe {x}:\n")
+        file.write(f"### Describe {x}:\n")
         file.write(markdown_table1)
         file.write("\n\n")  # Add a new line
-        file.write(f"Describe {y}:\n")
+        file.write(f"### Describe {y}:\n")
         file.write(markdown_table2)
         file.write("\n\n")  # Add a new line
         file.write("![scatter_plot](images/plot.png)\n")
-
-
-# x = "GDP per capita (constant 2010 US$)"
-# y = "Mortality rate, infant (per 1,000 live births)"
-# title = "Log GDP and Under-5 Mortality"
-
-# print(df[x])
-# summary_statistics(df, x)
-# df = log_func(df, x)
-# scatter_plot(df, "log " + x, y, title)
