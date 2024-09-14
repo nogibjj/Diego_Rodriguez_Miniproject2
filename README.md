@@ -7,9 +7,13 @@ Diego_Rodriguez_Miniproject2/
 │   ├── devcontainer.json
 │   └── Dockerfile
 ├── .github/
-│   └── workflows/cicd.yml
+│   ├── workflows/hello.yml
+|   ├── workflows/format.yml
+|   ├── workflows/lint.yml
+|   └── workflows/test.yml
 ├── Images/
-│   └── plot.png
+│   ├── plot.png
+|   └── test_plot.pmg
 ├── .gitignore
 ├── Data_summary.md
 ├── Main.py
